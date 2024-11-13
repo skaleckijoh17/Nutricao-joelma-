@@ -7,7 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 
-
 	</head>
 	<body>
 
@@ -17,7 +16,7 @@
 			</div>
 		</header>
 		<main>
-			<section class="container">
+			<section class="container"> 
 				<h2>Meus pacientes</h2>
 				<table>
 					<thead>
@@ -49,7 +48,7 @@
 						<tr class="paciente" >
 							<td class="info-nome">Erica</td>
 							<td class="info-peso">54</td>
-							<td class="info-altura">1.64</td>
+							<td class="info-altura">1.54</td>
 							<td class="info-gordura">14</td>
 							<td class="info-imc">0</td>
 						</tr>
@@ -72,9 +71,40 @@
 				</table>
 
 			</section>
+			
+			<section class="container">
+			  <h2 id="titulo-form">Adicionar novo paciente</h2>
+			  <ul id="mensagens-erro"></ul>
+			  
+			  <form id="form-adiciona">
+			    <div class="grupo">
+			     <label for="nome"> Nome: </label>
+			     <input id="nome" type="text" name="nome"
+			     placeholder="Digite o nome do paciente" class="campo" required>
+			     
+			    </div
+			    <div class="grupo">
+			    <label for="peso"> Peso: </label>
+			    <input id="peso" type="text" name="peso" placeholder="Digite o peso do paciente" class="campo" required>
+			    </div>
+			    
+			     <div class="grupo">
+			    <label for="altura"> Altura: </label>
+			    <input id="altura" type="text" name="altura" placeholder="Digite a altura do paciente" class="campo" required>
+			    </div>
+			    
+			    <div class="grupo">
+			    <label for="gordura"> % de gordura</label>
+			    <input id="gordura" type="text" name="gordura" placeholder="Digite o percentual de gordura do paciente" class="campo" required>
+			    </div>
+			    
+			    <button id="adicionar-paciente" class="botao bto-principal">
+			      adicionar
+			    </button>
+			  </form>
+			</section>
 		</main>
-
-		<script src="main.js"></script>
-
+    <script src="js/calcula-imc.js"></script>
+    <<script src="form.js"></script></script>
 	</body>
 </html>
